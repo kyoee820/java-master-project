@@ -2,6 +2,7 @@ package javamaster.annotation.custom;
 
 public class Car {
     private final String model;
+    // 1980 ~ 2025
     private final Integer year;
 
     public Car(String model, Integer year) {

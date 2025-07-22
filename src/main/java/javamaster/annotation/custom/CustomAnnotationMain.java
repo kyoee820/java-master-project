@@ -1,8 +1,10 @@
 package javamaster.annotation.custom;
 
+import javamaster.annotation.custom.validator.Validator;
+
 public class CustomAnnotationMain {
     public static void main(String[] args) {
-        Car car= new Car("BMW", 2021);
+        Car car = CarFactory.createdCar(new CarRequest("BMW", 2021));
         System.out.println(car);
     }
 }

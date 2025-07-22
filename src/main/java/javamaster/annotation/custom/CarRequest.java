@@ -1,7 +1,10 @@
 package javamaster.annotation.custom;
 
+import javamaster.annotation.custom.annotation.YearRange;
+
 public class CarRequest {
         private final String model;
+        @YearRange(min = 2000, max = 2025)
         private final Integer year;
 
         public CarRequest(String model, Integer year) {
