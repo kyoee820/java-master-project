@@ -7,7 +7,7 @@ import java.util.List;
 public class SuppressWarningsExample {
     public void something() {
         List lit = new ArrayList();
-        list.add("data");
-        System.out.println(list.get(0));
+        lit.add("data");
+        System.out.println(lit.get(0));
     }
 }
