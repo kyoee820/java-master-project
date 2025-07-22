@@ -3,6 +3,8 @@ package javamaster.annotation.custom;
 import javamaster.annotation.custom.annotation.ModelDescriptionPrint;
 import javamaster.annotation.custom.annotation.ModelDescriptionPrints;
 
+import java.time.LocalDate;
+
 public class Car {
     private final String model;
     // 1980 ~ 2025
@@ -36,6 +38,17 @@ public class Car {
 
     public Integer getYear() {
         return year;
+    }
+
+    // 생산 된지 5년이 넘었으면 정비가 필요합니다.
+    private boolean isNeedMaintenance() {
+        return LocalDate.of(year,1, 1).isBefore(LocalDate.now().minusYears(5));
+    }
+
+    // 오일 교체
+    public boolean isNeedChangeOil() {
+        // oil 교체는 1개월 마다 해야함
+        return LocalDate.of(year, 1, 1).isBefore(LocalDate.now().minusYears(1));
     }
 
     @Override
