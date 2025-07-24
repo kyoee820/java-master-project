@@ -1,4 +1,4 @@
-package java11;
+package javachange.java8.java11;
 
 import org.junit.jupiter.api.Test;
 
