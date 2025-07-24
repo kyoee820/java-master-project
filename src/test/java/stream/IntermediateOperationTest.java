@@ -3,13 +3,9 @@ package stream;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.summarizingDouble;
-import static java.util.stream.Collectors.toList;
 
 
 public class IntermediateOperationTest {
